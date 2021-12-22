@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    
+<form>
+    <div class="step step-1 active">
+        
+        <div class="content">
+            <div class="logo">
+                <div class="image"></div>
+            
+            <div class="text">
+              Welcome to Pepcoding <br />
+              Enroll now and become a master in coding !
+            </div>  
+          </div>
+        <form id="form">
+            <div class="title">Get Started</div>
+            <div>
+                <label for="username">User Name</label>
+                <i class="fas fa-user"></i>
+                
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Manpreet Kaur"
+                 />
+                
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                
+                <div class="error"></div>
+                
+            </div>
+      
+<div>
+	<label for="email">Email</label>
+    <i class="far fa-envelope"></i>
+    
+    <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="abc@gmail.com"
+     />
+    
+    <i class="fas fa-exclamation-circle failure-icon"></i>
+    <i class="far fa-check-circle success-icon"></i>
+    
+    <div class="error"></div>
+    
+</div>
+            
+        
+<div>
+	<label for="password">Password</label>
+    <i class="fas fa-lock"></i>
+    
+    <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password here"
+     />
+    
+    <i class="fas fa-exclamation-circle failure-icon"></i>
+    <i class="far fa-check-circle success-icon"></i>
+    
+    <div class="error"></div>
+    
+</div>
+<button id="next-btn" type="Next" style="background-color: linear-gradient(180, red, blue);">Next</button>
+        </form>
+        
+    </div>
+
+</div>
+  
+
+<div class="step step-2 active">
+        <div class="content">
+            <div class="logo">
+                <div class="image"></div>
+            
+            <div class="text">
+              Welcome to Pepcoding <br />
+              Congratulaltions you are one step closer
+            </div>  
+          </div>
+        <form id="form">
+            <div class="title">Your academics , Please</div>
+            <div>
+                <label for="State">Your Location</label>
+                <i class="fas fa-user"></i>
+                
+                <input
+                    type="search"
+                    name="Location"
+                    id="Location"
+                    placeholder="City"
+                 />
+                
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                
+                <div class="error"></div>
+                
+            </div>
+
+        
+<div>
+	<label for="college">Your Uni/College</label>
+    <i class="far fa-envelope"></i>
+    
+
+       
+            <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Choose your College" readonly>
+                <div class="option">
+                    <div onclick="show('a')">SPPU</div>
+                    <div onclick="show('b')">Mumbai University</div>
+                </div>
+            </div>
+
+    
+    <i class="fas fa-exclamation-circle failure-icon"></i>
+    <i class="far fa-check-circle success-icon"></i>
+    
+    <div class="error"></div>
+    
+</div>
+       
+        
+<div>
+	<label for="enrollmentNo">Enrollment</label>
+    <i class="fas fa-lock"></i>
+    
+    <input
+        type="number"
+        name="number"
+        id="enrollmentNo"
+        placeholder="16 digit enrollment number"
+     />
+    
+    <i class="fas fa-exclamation-circle failure-icon"></i>
+    <i class="far fa-check-circle success-icon"></i>
+    
+    <div class="error"></div>
+    
+</div>
+<button id="prev-btn" style="background-color: blueviolet;" type="prev">Previous</button>
+<button id="next-btn" type="next">Next</button>
+
+<div class="step step-3 active">
+    <div class="content">
+        <div class="logo">
+            <div class="image"></div>
+        
+        <div class="text">
+          Welcome to Pepcoding <br />
+          Almost Done !
+        </div>  
+      </div>
+    <form id="form">
+    <div class="title">Your Tech Stack</div>
+        <div>
+            <label for="Tech">Primary Tech Skill</label>
+            <i class="fas fa-user"></i>
+            
+            <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Choose One" readonly>
+                <div class="option">
+                    <div onclick="show('a')">Java</div>
+                    <div onclick="show('b')">DBMS</div>
+                    <div onclick="show('c')">Networking</div>
+                    <div onclick="show('d')">WebDev</div>
+                </div>
+            </div>
+            
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            
+            <div class="error"></div>
+            
+        </div>
+
+    
+<div>
+<label for="Certification">Certification</label>
+<i class="far fa-envelope"></i>
+     <div class="dropdown">
+            <input type="text" class="textBox" placeholder="Choose your Certification" readonly>
+            <div class="option">
+                <div onclick="show('a')">AWS</div>
+                <div onclick="show('b')">CCNA</div>
+                <div onclick="show('c')">Oracle Certification</div>
+                <div onclick="show('d')">MERN Stack</div>
+            </div>
+        </div>
+
+
+<i class="fas fa-exclamation-circle failure-icon"></i>
+<i class="far fa-check-circle success-icon"></i>
+
+<div class="error"></div>
+
+</div>
+   
+  
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+
+
+    <button>
+      <span class="uil uil-message"></span>
+      <span class="text"></span>
+    </button>
+
+
+
+
+        </form>
+        
+    </div>
+</div>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
+

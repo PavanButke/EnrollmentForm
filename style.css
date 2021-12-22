@@ -1,0 +1,270 @@
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  form {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+  }
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  form div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  form div {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  input:focus {
+    border: 2px solid #f2796e;
+  }
+  form div i {
+    position: absolute;
+    padding: 10px;
+  }
+  .failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+/* Style rules for submit btn */
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: #f2796e;
+    border: 2px solid #f2796e;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f2796e;
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+  }
+  
+  form {
+     width: 45%;
+     max-width: none;
+  }
+  .image {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCbprHKsNzb8uHhcGJINV_UavccB8_YFAknA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border: 2px solid black; */
+    height: 45%;
+  }
+  .text {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+ 
+.dropdown{
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+}
+.dropdown::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.dropdown.active::before{
+    top: 22px;
+    transform: rotate(-225deg);
+}
+
+.dropdown input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background:#fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+.dropdown .option{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background:#fff;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+.dropdown.active .option{
+    display: block;
+}
+.dropdown .option div{
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.dropdown .option div:hover{
+    background: var(--black1);
+    color: var(--white);
+}
+
+
+
+
+
+
+        .step  active {
+            box-sizing: border-box;
+          }
+          
+        
+          
+          .step step-3 active body {
+            display: grid;
+            place-items: center;
+            background: #1d1e22;
+          }
+          
+         .step button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            height: 3.5rem;
+            width: 13rem;
+            padding: 0 2.5rem 0 1.375rem;
+            border: 0;
+            border-radius: 1.75rem;
+            font-family: Poppins;
+            color: #f7f7f7;
+            background: #d62959;
+            cursor: pointer;
+          }
+          
+          .text {
+            position: relative;
+            height: 3.5rem;
+            width: 6rem;
+            white-space: nowrap;
+            font-size: 1rem;
+          }
+          
+          .text::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            content: "Submit Data";
+            animation: textAnimation 10s infinite;
+          }
+          
+          .uil {
+            font-size: 22px;
+            animation: iconAnimation 10s infinite;
+          }
+          
+          @keyframes textAnimation {
+            0% { transform: translate(0, -50%); }
+            9% { transform: translate(0, -50%); content: "Send Message"; }
+            10% { transform: translate(0, -50%); content: "Sending ..."; }
+            30% { transform: translate(0, -50%); }
+            39.9% { transform: translate(0, 100px); }
+            40% { transform: translate(300px, 100px); content: "Sending ..."; }
+            40.1% { transform: translate(300px, -60px); content: "Sent"; }
+            40.2% { transform: translate(33px, -60px); }
+            45% { transform: translate(33px, -50%); }
+            95% { transform: translate(33px, -50%); content: "Sent"; }
+            100% { transform: translate(0, -50%); content: "Send Message"; }
+          }
+          
+          @keyframes iconAnimation {
+            0% { transform: translate(0, 0); }
+            10% { transform: translate(0, 0); }
+            20% { transform: translate(-170px, 0); }
+            30% { transform: translate(-170px, 0); }
+            40% { transform: translate(200px, 0) scale(2); }
+            40.1% { transform: translate(200px, -60px) scale(1); }
+            40.2% { transform: translate(34px, -60px); }
+            45% { transform: translate(34px, 0); }
+            95% { transform: translate(34px, 0); }
+            100% { transform: translate(0, 0); }
+          }
+          
+          button {
+            overflow: hidden;
+          }
+
+
