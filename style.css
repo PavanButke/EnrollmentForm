@@ -114,3 +114,8 @@ form {
   color: white;
   font-size: 18px;
 }
+
+ .matchList {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: blue orange;   /* scroll thumb and track */
+}

@@ -80,7 +80,7 @@ const searchStates = async searchText =>{
     if(searchText.length == 0)
     {
         matches=[];
-        matchList.innerHTML= ''
+        matchList.innerHTML= '';
     }
 
     resultinBox(matches)
@@ -109,5 +109,7 @@ const resultinBox = matches =>{
 }
 
 search.addEventListener('input', ()=> searchStates(search.value)
+
+
 
 )
